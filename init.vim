@@ -11,7 +11,9 @@ call plug#begin("~/.vim/plugged")
   " File Search
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'junegunn/fzf.vim'
-  
+  "Switch Between Projects https://github.com/benwainwright/fzf-project
+  Plug 'benwainwright/fzf-project'
+
     " Language Client
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver']
