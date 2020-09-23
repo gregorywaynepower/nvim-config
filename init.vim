@@ -36,6 +36,10 @@ let g:fzf_action = {
   \ 'ctrl-v': 'vsplit'
   \}
 
+" requires silversearcher-ag
+" used to ignore gitignore files
+let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+
 " open new split panes to right and below
 set splitright
 set splitbelow
