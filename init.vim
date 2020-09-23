@@ -13,6 +13,8 @@ call plug#begin("~/.vim/plugged")
   Plug 'junegunn/fzf.vim'
   "Switch Between Projects https://github.com/benwainwright/fzf-project
   Plug 'benwainwright/fzf-project'
+  "Dependency for FZF Project, also a great Git Plugin https://github.com/tpope/vim-fugitive
+  Plug 'tpope/vim-fugitive'
 
     " Language Client
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
