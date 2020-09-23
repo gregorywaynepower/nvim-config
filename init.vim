@@ -27,7 +27,6 @@ call plug#end()
 " Config Section
 
 " Now, to search for a file, press Ctrl+P , search for the file you’re looking for, and press:
-
 "   CTRL+T to open it in a new tab.
 "   CTRL+S to open below (split view).
 "   CTRL+T to open to the side (vertical split).
