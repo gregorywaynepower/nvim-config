@@ -1,6 +1,7 @@
 call plug#begin("~/.vim/plugged")
   " Plugin Section
-  
+  "Syntax Highlighting for All Languages
+  Plug 'sheerun/vim-polyglot'
   " File Explorer with Icons
   Plug 'scrooloose/nerdtree'
   Plug 'ryanoasis/vim-devicons'
@@ -19,9 +20,6 @@ call plug#begin("~/.vim/plugged")
     " Language Client
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver']
-  " TypeScript Highlighting
-  Plug 'leafgarland/typescript-vim'
-  Plug 'peitalin/vim-jsx-typescript'
 call plug#end()
 
 " Config Section
