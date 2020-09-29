@@ -65,6 +65,11 @@ nnoremap <A-l> <C-w>l
 " start terminal in insert mode
 au BufEnter * if &buftype == 'terminal' | :startinsert | endif
 
+"Prerequisites for Vimwiki
+set nocompatible
+filetype plugin on
+syntax on
+
 " open terminal on ctrl+;
 " uses zsh instead of bash
 function! OpenTerminal()
