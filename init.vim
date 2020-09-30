@@ -16,8 +16,13 @@ call plug#begin("~/.vim/plugged")
   Plug 'benwainwright/fzf-project'
   "Dependency for FZF Project, also a great Git Plugin https://github.com/tpope/vim-fugitive
   Plug 'tpope/vim-fugitive'
+
+	"Ranger Plugin for File Browsing https://github.com/francoiscabrol/ranger.vim
+	Plug 'francoiscabrol/ranger.vim'
+	"Dependency for Ranger
+	Plug 'rbgrouleff/bclose.vim'
 	
-	"Auto Pairs https://github.com/jiangmiao/auto-pairs
+	""Auto Pairs https://github.com/jiangmiao/auto-pairs
 	"Autocompletes brackets
 	Plug 'jiangmiao/auto-pairs'
 
