@@ -100,9 +100,6 @@ noremap <Right> <Nop>
 vnoremap < <gv
 vnoremap > >gv
 
-" disable recording
-nnoremap q <Nop>
-
 if exists('g:vscode')
 
   " don't highlight search items
