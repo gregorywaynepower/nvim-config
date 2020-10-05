@@ -31,7 +31,15 @@ call plug#begin("~/.vim/plugged")
   let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver']
 call plug#end()
 
-" Config Section
+"----------------------------------------------------------------------
+" Configuration Options
+"----------------------------------------------------------------------
+
+"----------------------------------------------------------------------
+" Basic Options
+"----------------------------------------------------------------------
+let mapleader=" "         " The <leader> key
+
 
 " Now, to search for a file, press Ctrl+P , search for the file you’re looking for, and press:
 "   CTRL+T to open it in a new tab.
