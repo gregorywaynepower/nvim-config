@@ -38,8 +38,10 @@ call plug#end()
 "----------------------------------------------------------------------
 " Basic Options
 "----------------------------------------------------------------------
-let mapleader=" "         " The <leader> key
 
+" The <leader> key
+let mapleader=" " 
+set colorcolumn=80
 
 " Now, to search for a file, press Ctrl+P , search for the file you’re looking for, and press:
 "   CTRL+T to open it in a new tab.
@@ -86,7 +88,7 @@ syntax on
 " open terminal on ctrl+;
 " uses zsh instead of bash
 function! OpenTerminal()
-  split term://bash
+  split term://zsh
   resize 10
 endfunction
 nnoremap <c-n> :call OpenTerminal()<CR>
