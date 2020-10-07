@@ -5,10 +5,8 @@ call plug#begin("~/.vim/plugged")
   " File Explorer with Icons
   Plug 'scrooloose/nerdtree'
   Plug 'ryanoasis/vim-devicons'
-  
   "vimwiki Plugin https://github.com/vimwiki/vimwiki
   Plug 'vimwiki/vimwiki'
-
   " File Search
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'junegunn/fzf.vim'
@@ -16,19 +14,17 @@ call plug#begin("~/.vim/plugged")
   Plug 'benwainwright/fzf-project'
   "Dependency for FZF Project, also a great Git Plugin https://github.com/tpope/vim-fugitive
   Plug 'tpope/vim-fugitive'
-
 	"Ranger Plugin for File Browsing https://github.com/francoiscabrol/ranger.vim
 	Plug 'francoiscabrol/ranger.vim'
 	"Dependency for Ranger
 	Plug 'rbgrouleff/bclose.vim'
-	
 	""Auto Pairs https://github.com/jiangmiao/auto-pairs
 	"Autocompletes brackets
 	Plug 'jiangmiao/auto-pairs'
 
     " Language Client
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
-  let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver']
+  let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver', 'coc-python']
 call plug#end()
 
 "----------------------------------------------------------------------
