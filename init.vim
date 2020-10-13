@@ -81,7 +81,7 @@ set nocompatible
 filetype plugin on
 syntax on
 
-" open terminal on ctrl+;
+" open terminal on ctrl+n
 " uses zsh instead of bash
 function! OpenTerminal()
   split term://zsh
@@ -89,8 +89,8 @@ function! OpenTerminal()
 endfunction
 nnoremap <c-n> :call OpenTerminal()<CR>
 
-" use system clipboard by default
-set clipboard=unnamedplus
+" use system clipboard by default formatted to work on multiple platforms
+set clipboard^=unnamed,unnamedplus
 
 " setting relative line numbers and line numbers on the side to appear
 set number
