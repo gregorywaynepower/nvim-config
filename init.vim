@@ -101,6 +101,9 @@ nnoremap <c-n> :call OpenTerminal()<CR>
 " use system clipboard by default formatted to work on multiple platforms
 set clipboard^=unnamed,unnamedplus
 
+" enable mouse support
+set mouse=a
+
 " setting relative line numbers and line numbers on the side to appear
 set number
 set relativenumber
