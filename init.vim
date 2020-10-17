@@ -2,7 +2,10 @@ call plug#begin("~/.vim/plugged")
   " Plugin Section
   "Syntax Highlighting for All Languages
   Plug 'sheerun/vim-polyglot'
-  " File Explorer with Icons
+	" Airling Plugin
+	Plug 'vim-airline/vim-airline'
+	Plug 'vim-airline/vim-airline-themes'	
+	" File Explorer with Icons
   Plug 'scrooloose/nerdtree'
   Plug 'ryanoasis/vim-devicons'
   "vimwiki Plugin https://github.com/vimwiki/vimwiki
@@ -12,8 +15,10 @@ call plug#begin("~/.vim/plugged")
   Plug 'junegunn/fzf.vim'
   "Switch Between Projects https://github.com/benwainwright/fzf-project
   Plug 'benwainwright/fzf-project'
-  "Dependency for FZF Project, also a great Git Plugin https://github.com/tpope/vim-fugitive
+  "Dependency for FZF Project, also a great Git Plugin
   Plug 'tpope/vim-fugitive'
+	"Git Gutter Plugin
+	Plug 'airblade/vim-gitgutter'
 	"Ranger Plugin for File Browsing https://github.com/francoiscabrol/ranger.vim
 	Plug 'francoiscabrol/ranger.vim'
 	"Dependency for Ranger
@@ -21,8 +26,9 @@ call plug#begin("~/.vim/plugged")
 	""Auto Pairs https://github.com/jiangmiao/auto-pairs
 	"Autocompletes brackets
 	Plug 'jiangmiao/auto-pairs'
-
-    " Language Client
+	"Surround Package Vim
+	Plug 'tpope/vim-surround'
+	" Language Client
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver', 'coc-python']
 call plug#end()
@@ -30,6 +36,9 @@ call plug#end()
 "----------------------------------------------------------------------
 " Configuration Options
 "----------------------------------------------------------------------
+
+" Add convenience variable for powerline-fonts
+let g:airline_powerline_fonts = 1
 
 "----------------------------------------------------------------------
 " Basic Options
