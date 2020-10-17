@@ -2,7 +2,7 @@ call plug#begin("~/.vim/plugged")
   " Plugin Section
   "Syntax Highlighting for All Languages
   Plug 'sheerun/vim-polyglot'
-	" Airling Plugin
+	" Airling Plugin - this has caused launch to be a smidge slower.
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'	
 	" File Explorer with Icons
@@ -17,7 +17,7 @@ call plug#begin("~/.vim/plugged")
   Plug 'benwainwright/fzf-project'
   "Dependency for FZF Project, also a great Git Plugin
   Plug 'tpope/vim-fugitive'
-	"Git Gutter Plugin
+	"Git Gutter Plugin - this also takes a second to launch the gutter.
 	Plug 'airblade/vim-gitgutter'
 	"Ranger Plugin for File Browsing https://github.com/francoiscabrol/ranger.vim
 	Plug 'francoiscabrol/ranger.vim'
