@@ -6,8 +6,8 @@ call plug#begin("~/.vim/plugged")
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'	
 	" File Explorer with Icons
-  Plug 'scrooloose/nerdtree'
-  Plug 'ryanoasis/vim-devicons'
+	Plug 'neoclide/coc.nvim', {'branch': 'release'}
+	Plug 'ryanoasis/vim-devicons'
   "vimwiki Plugin https://github.com/vimwiki/vimwiki
   Plug 'vimwiki/vimwiki'
   " File Search
