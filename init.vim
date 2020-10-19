@@ -1,4 +1,4 @@
-call plug#begin("~/.vim/plugged")
+call plug#begin("~/.config/nvim/plug-config")
   " Plugin Section
   "Syntax Highlighting for All Languages
   Plug 'sheerun/vim-polyglot'
