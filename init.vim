@@ -35,9 +35,6 @@ source $HOME/.config/nvim/plug-config/coc.vim
 "----------------------------------------------------------------------
 " Configuration Options
 "----------------------------------------------------------------------
-"Add whichkey to be triggered on leader
-nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
-set timeoutlen=500
 
 " Add convenience variable for powerline-fonts
 let g:airline_powerline_fonts = 1
