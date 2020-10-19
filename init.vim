@@ -19,23 +19,25 @@ call plug#begin("~/.config/nvim/plug-config")
   Plug 'tpope/vim-fugitive'
 	"Git Gutter Plugin - this also takes a second to launch the gutter.
 	Plug 'airblade/vim-gitgutter'
-	"Ranger Plugin for File Browsing https://github.com/francoiscabrol/ranger.vim
-	Plug 'francoiscabrol/ranger.vim'
-	"Dependency for Ranger
-	Plug 'rbgrouleff/bclose.vim'
 	""Auto Pairs https://github.com/jiangmiao/auto-pairs
 	"Autocompletes brackets
 	Plug 'jiangmiao/auto-pairs'
 	"Surround Package Vim
 	Plug 'tpope/vim-surround'
-	" Language Client
+  " Language Client
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver', 'coc-python']
 call plug#end()
 
+"Source CoC Configuration File, Courtesy of Chris @ The Machine
+source $HOME/.config/nvim/plug-config/coc.vim
+
 "----------------------------------------------------------------------
 " Configuration Options
 "----------------------------------------------------------------------
+"Add whichkey to be triggered on leader
+nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
+set timeoutlen=500
 
 " Add convenience variable for powerline-fonts
 let g:airline_powerline_fonts = 1

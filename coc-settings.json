@@ -1,1 +1,9 @@
-
+{
+  "explorer.width": 30,
+  "explorer.icon.enableVimDevicons": true,
+  "explorer.previewAction.onHover": true,
+  "explorer.keyMappings": {
+    "<CR>": ["expandable?", "expand","open"],
+    "v": "open:vsplit"
+  }
+}
