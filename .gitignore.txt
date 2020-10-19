@@ -1,2 +1,3 @@
 plug-config/**
 plug-config/*
+.netrwhist
