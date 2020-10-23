@@ -19,14 +19,11 @@ call plug#begin("~/.config/nvim/plug-config")
   Plug 'tpope/vim-fugitive'
 	"Git Gutter Plugin - this also takes a second to launch the gutter.
 	Plug 'airblade/vim-gitgutter'
-	""Auto Pairs https://github.com/jiangmiao/auto-pairs
+	"Auto Pairs https://github.com/jiangmiao/auto-pairs
 	"Autocompletes brackets
 	Plug 'jiangmiao/auto-pairs'
 	"Surround Package Vim
 	Plug 'tpope/vim-surround'
-  " Language Client
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
-  let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver', 'coc-python']
 call plug#end()
 
 "Source CoC Configuration File, Courtesy of Chris @ The Machine
