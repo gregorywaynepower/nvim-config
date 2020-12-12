@@ -8,6 +8,8 @@ call plug#begin("~/.config/nvim/plug-config")
 	" File Explorer with Icons
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 	Plug 'ryanoasis/vim-devicons'
+  "NerdTree File Explorer
+  Plug 'preservim/nerdtree'
   "vimwiki Plugin https://github.com/vimwiki/vimwiki
   Plug 'vimwiki/vimwiki'
   " File Search
@@ -33,6 +35,11 @@ source $HOME/.config/nvim/plug-config/coc.vim
 " Configuration Options
 "----------------------------------------------------------------------
 
+" Opening NERDTree automatically when vim starts up if no files were
+" specified?
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
 " Add convenience variable for powerline-fonts
 let g:airline_powerline_fonts = 1
 
@@ -40,12 +47,12 @@ let g:airline_powerline_fonts = 1
 " Basic Options
 "----------------------------------------------------------------------
 
-" Workaround for having coc-explorer for default directory browser
-augroup MyCocExplorer
-  autocmd!
-  autocmd VimEnter * sil! au! FileExplorer *
-  autocmd BufEnter * let d = expand('%') | if isdirectory(d) | bd | exe 'CocCommand explorer ' . d | endif
-augroup END
+"" Workaround for having coc-explorer for default directory browser
+"augroup MyCocExplorer
+"  autocmd!
+"  autocmd VimEnter * sil! au! FileExplorer *
+"  autocmd BufEnter * let d = expand('%') | if isdirectory(d) | bd | exe 'CocCommand explorer ' . d | endif
+"augroup END
 
 " The <leader> key
 let mapleader=" " 
