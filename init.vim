@@ -28,9 +28,6 @@ call plug#begin("~/.config/nvim/plug-config")
 	Plug 'tpope/vim-surround'
 call plug#end()
 
-"Source CoC Configuration File, Courtesy of Chris @ The Machine
-source $HOME/.config/nvim/plug-config/coc.vim
-
 "----------------------------------------------------------------------
 " Configuration Options
 "----------------------------------------------------------------------
