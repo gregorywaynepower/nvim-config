@@ -2,3 +2,6 @@ plug-config/**
 plug-config/*
 .netrwhist
 plug-config/
+plugin/
+plugin/*
+plugin/**
