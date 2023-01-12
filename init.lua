@@ -107,6 +107,9 @@ vim.wo.number = true
 -- Relative line numbers
 vim.wo.relativenumber = true
 
+-- Makes sure there's at least 8 newlines above or below cursor.
+vim.wo.scrolloff = 8
+
 -- Enable mouse mode
 vim.o.mouse = 'a'
 
