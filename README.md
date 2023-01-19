@@ -1,14 +1,38 @@
-# How to Install Neovim
 
-<a href="https://www.youtube.com/watch?v=stqUbv-5u2s">Effective Neovim: Instant IDE by TJ DeVries (nvim Contributor</a>
-<a href="https://www.youtube.com/watch?v=QMVIJhC9Veg">Primagen's Video: 0 to LSP : Neovim RC From Scratch</a>
+# Welcome to the Neovim Config
 
-Run the Following Commands
-<a href="https://github.com/neovim/neovim/wiki/Installing-Neovim">Link to Neovim Install Wiki</a>
-<a href="https://medium.com/better-programming/setting-up-neovim-for-web-development-in-2020-d800de3efacd">Useful Article</a>
-<a href="https://github.com/neovim/neovim/wiki/Installing-Neovim">Useful Article</a>
-Please double check link above.
+## Useful Links
 
+<ul>
+  <li>
+    <a href="https://www.youtube.com/watch?v=stqUbv-5u2s">
+      Effective Neovim: Instant IDE by TJ DeVries (nvim Contributor
+    </a>
+  </li>
+  <li>
+    <a href="https://www.youtube.com/watch?v=QMVIJhC9Veg">
+      Primagen's Video: 0 to LSP : Neovim RC From Scratch
+    </a>
+  </li>
+</ul>
+
+## Links
+<ul>
+  <li>
+    <a href="https://github.com/neovim/neovim/wiki/Installing-Neovim">
+      Link to Neovim Install Wiki
+    </a>
+  </li>
+  <li>
+    <a href="https://medium.com/better-programming/setting-up-neovim-for-web-development-in-2020-d800de3efacd">
+      Useful Article
+    </a>
+  </li>
+</ul>
+
+Please double check links above.
+
+## Installation with the Following Commands
 ```
 sudo apt-get install software-properties-common
 sudo apt-get install python-software-properties
