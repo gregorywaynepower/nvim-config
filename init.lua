@@ -30,6 +30,9 @@ require('packer').startup(function(use)
     'hrsh7th/nvim-cmp',
     requires = { 'hrsh7th/cmp-nvim-lsp', 'L3MON4D3/LuaSnip', 'saadparwaiz1/cmp_luasnip' },
   }
+    
+  -- Adds a whole history of changes made to a file.
+  use 'mbbill/undotree'
 
   use { -- Highlight, edit, and navigate code
     'nvim-treesitter/nvim-treesitter',
@@ -95,6 +98,21 @@ vim.api.nvim_create_autocmd('BufWritePost', {
 -- [[ Setting options ]]
 -- See `:help vim.o`
 
+-- Setting textwrapping settings to true
+vim.o.wrap = true
+
+-- Setting linebreak on word boundaries to true
+vim.o.linebreak = true
+
+-- Set colorcolumn to give me a boundary to work with to make things more readable for others
+vim.o.colorcolumn = "80"
+
+-- Set scrollof to make lines around cursor more readable
+vim.o.scrolloff = 8
+
+-- Set relative line numbers
+vim.o.relativenumber = true
+
 -- Set highlight on search
 vim.o.hlsearch = false
 
@@ -140,6 +158,9 @@ vim.o.completeopt = 'menuone,noselect'
 --  NOTE: Must happen before plugins are required (otherwise wrong leader will be used)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
+
+-- Remap to make UndoTreeToggle more convenient
+vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 
 -- Keymaps for better default experience
 -- See `:help vim.keymap.set()`
