@@ -98,9 +98,6 @@ vim.api.nvim_create_autocmd('BufWritePost', {
 -- [[ Setting options ]]
 -- See `:help vim.o`
 
--- Enable the nvim register and system clipboard to interact so you can copy and paste.
-vim.o.clipboard = 'unnamedplus'
-
 -- Setting textwrapping settings to true
 vim.o.wrap = true
 
