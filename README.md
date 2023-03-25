@@ -10,6 +10,11 @@
     </a>
   </li>
   <li>
+    <a href="https://github.com/nvim-lua/kickstart.nvim">
+      kickstart.nvim is referenced in it above
+    </a>
+  </li>
+  <li>
     <a href="https://www.youtube.com/watch?v=QMVIJhC9Veg">
       Primagen's Video: 0 to LSP : Neovim RC From Scratch
     </a>
@@ -44,3 +49,4 @@ sudo apt-get install python-dev python-pip python3-dev python3-pip
 
 ## Location of Current nvim config
 ~/.config/nvim/init.lua
+~/.local/share/nvim
