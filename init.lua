@@ -68,7 +68,9 @@ require('packer').startup(function(use)
 
   -- Fuzzy Finder Algorithm which requires local dependencies to be built. Only load if `make` is available the below line is for Windows OS
   use { 'nvim-telescope/telescope-fzf-native.nvim', run =
-  'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
+'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
+  -- Fuzzy Finder Algorithm which requires local dependencies to be built. Only load if `make` is available
+  -- use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make', cond = vim.fn.executable 'make' == 1 }
 
   -- Add custom plugins to packer from ~/.config/nvim/lua/custom/plugins.lua
   local has_plugins, plugins = pcall(require, 'custom.plugins')
@@ -105,8 +107,10 @@ vim.api.nvim_create_autocmd('BufWritePost', {
 -- [[ Setting options ]]
 -- See `:help vim.o`
 
--- Setting textwrapping settings
+-- Setting textwrapping settings to true
 vim.o.wrap = true
+
+-- Setting linebreak on word boundaries to true
 vim.o.linebreak = true
 
 -- Set colorcolumn to give me a boundary to work with to make things more readable for others
@@ -121,8 +125,17 @@ vim.o.relativenumber = true
 -- Set highlight on search
 vim.o.hlsearch = false
 
+-- Set incremental highlight on search
+vim.o.incsearch = true
+
 -- Make line numbers default
 vim.wo.number = true
+
+-- Relative line numbers
+vim.wo.relativenumber = true
+
+-- Makes sure there's at least 8 newlines above or below cursor.
+vim.wo.scrolloff = 8
 
 -- Enable mouse mode
 vim.o.mouse = 'a'
@@ -247,7 +260,7 @@ vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { de
 -- See `:help nvim-treesitter`
 require('nvim-treesitter.configs').setup {
   -- Add languages to be installed here that you want installed for treesitter
-  ensure_installed = { 'c', 'cpp', 'go', 'lua', 'python', 'rust', 'typescript', 'help', 'vim' },
+  ensure_installed = { 'c', 'cpp', 'go', 'lua', 'python', 'rust', 'typescript', 'help', 'vim', 'html' },
 
   highlight = { enable = true },
   indent = { enable = true, disable = { 'python' } },
