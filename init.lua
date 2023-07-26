@@ -151,11 +151,18 @@ vim.o.ignorecase = true
 vim.o.smartcase = true
 
 -- Decrease update time
-vim.o.updatetime = 50
+vim.o.updatetime = 250
 vim.wo.signcolumn = 'yes'
+
+-- Set clipboard to yank to OS clipboard
+vim.o.clipboard = 'unnamedplus'
 
 -- Set colorscheme
 vim.o.termguicolors = true
+require('onedark').setup {
+  style = 'darker'
+}
+
 vim.cmd [[colorscheme onedark]]
 
 -- Set completeopt to have a better completion experience
