@@ -19,7 +19,7 @@ require('packer').startup(function(use)
       'williamboman/mason-lspconfig.nvim',
 
       -- Useful status updates for LSP
-      'j-hui/fidget.nvim',
+    {'j-hui/fidget.nvim', tag = 'legacy'},
 
       -- Additional lua configuration, makes nvim stuff amazing
       'folke/neodev.nvim',
@@ -144,6 +144,9 @@ vim.o.smartcase = true
 -- Decrease update time
 vim.o.updatetime = 250
 vim.wo.signcolumn = 'yes'
+
+-- Set clipboard to yank to OS clipboard
+vim.o.clipboard = 'unnamedplus'
 
 -- Set colorscheme
 vim.o.termguicolors = true
@@ -377,7 +380,7 @@ local servers = {
   -- rust_analyzer = {},
   -- tsserver = {},
 
-  sumneko_lua = {
+  lua_ls = {
     Lua = {
       workspace = { checkThirdParty = false },
       telemetry = { enable = false },
