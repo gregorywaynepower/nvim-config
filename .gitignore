@@ -5,3 +5,4 @@ plug-config/
 plugin/
 plugin/*
 plugin/**
+.luarc.json
