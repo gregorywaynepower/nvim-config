@@ -19,13 +19,13 @@ require('packer').startup(function(use)
       'williamboman/mason-lspconfig.nvim',
 
       -- Useful status updates for LSP
-      {'j-hui/fidget.nvim', tag = 'legacy'},
+      { 'j-hui/fidget.nvim',    tag = 'legacy' },
 
       -- Additional lua configuration, makes nvim stuff amazing
       'folke/neodev.nvim',
 
       -- Add Prettier
-      {'prettier/vim-prettier'}
+      { 'prettier/vim-prettier' }
     },
   }
 
@@ -218,7 +218,11 @@ require('telescope').setup {
       i = {
         ['<C-u>'] = false,
         ['<C-d>'] = false,
+        ['<C-q>'] = require('telescope.actions').smart_add_to_qflist + require('telescope.actions').open_qflist
       },
+      n = {
+        ['<C-q>'] = require('telescope.actions').smart_add_to_qflist + require('telescope.actions').open_qflist
+      }
     },
   },
 }
