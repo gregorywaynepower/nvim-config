@@ -25,6 +25,9 @@ require('packer').startup(function(use)
       'folke/neodev.nvim',
 
       -- Add Prettier
+      -- If you run into any problems on PackerUpdate
+      -- https://github.com/prettier/vim-prettier/issues/344
+      -- or https://github.com/prettier/vim-prettier/pull/345
       {'prettier/vim-prettier'}
     },
   }
