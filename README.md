@@ -4,6 +4,9 @@
 <a href="https://dotfyle.com/gregorywaynepower/nvim-config"><img src="https://dotfyle.com/gregorywaynepower/nvim-config/badges/leaderkey?style=flat" /></a>
 <a href="https://dotfyle.com/gregorywaynepower/nvim-config"><img src="https://dotfyle.com/gregorywaynepower/nvim-config/badges/plugin-manager?style=flat" /></a>
 
+## Archival Notice
+
+Please defer to [gregorywaynepower/kickstart.nvim](https://github.com/gregorywaynepower/kickstart.nvim) for any updates to the config.
 
 ## Install Instructions
 
