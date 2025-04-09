@@ -104,6 +104,11 @@ vim.opt.number = true
 --  Experiment for yourself to see if you like it!
 vim.opt.relativenumber = true
 
+-- Set wordwrap around linebreaks
+vim.wo.wrap = true
+vim.wo.linebreak = true
+vim.wo.list = false
+
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = 'a'
 
