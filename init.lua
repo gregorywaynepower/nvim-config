@@ -246,11 +246,13 @@ require('lazy').setup({
     -- optional for floating window border decoration
     dependencies = { 'nvim-lua/plenary.nvim' },
   },
-  { 'quarto-dev/quarto-nvim', dependencies = {
-    'jmbuhr/otter.nvim',
-    'nvim-treesitter/nvim-treesitter',
-  } },
-
+  { 'quarto-dev/quarto-nvim', dependencies = { 'jmbuhr/otter.nvim', 'nvim-treesitter/nvim-treesitter' } },
+  {
+    'chomosuke/typst-preview.nvim',
+    lazy = false, -- or ft = 'typst'
+    version = '1.*',
+    opts = {}, -- lazy.nvim will implicitly calls `setup {}`
+  },
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
 
   -- NOTE: Plugins can also be added by using a table,
